@@ -1,7 +1,0 @@
-Running: xsim.dir/inst_fetch_tb_behav/xsimk.exe -simmode gui -wdb inst_fetch_tb_behav.wdb -simrunnum 0 -socket 4531
-Design successfully loaded
-Design Loading Memory Usage: 8752 KB (Peak: 8752 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 9580 KB (Peak: 9580 KB)
-Simulation CPU Usage: 30 ms
