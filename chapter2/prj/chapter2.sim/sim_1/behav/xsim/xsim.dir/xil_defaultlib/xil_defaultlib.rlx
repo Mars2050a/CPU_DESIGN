@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/CPU_Design/chapter2/prj/chapter2.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/CPU_Design/chapter2/sim/inst_fetch_tb.v,1759565798,verilog,,,,inst_fetch_tb,,,,,,,,
+D:/CPU_Design/chapter2/src/inst_fetch.v,1759064181,verilog,,D:/CPU_Design/chapter2/src/pc_reg.v,,inst_fetch,,,,,,,,
+D:/CPU_Design/chapter2/src/pc_reg.v,1759065527,verilog,,D:/CPU_Design/chapter2/src/rom.v,,pc_reg,,,,,,,,
+D:/CPU_Design/chapter2/src/rom.v,1759494985,verilog,,D:/CPU_Design/chapter2/sim/inst_fetch_tb.v,,rom,,,,,,,,
