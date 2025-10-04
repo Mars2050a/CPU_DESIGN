@@ -1,4 +1,4 @@
-# CPU_Design
+# CPU_DESIGN
 雷思磊《自己动手写CPU》的个人实践练习。
 
 ## 文件组织结构
