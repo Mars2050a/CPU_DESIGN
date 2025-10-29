@@ -28,7 +28,7 @@ module regfile(
     end
 
     always @ (*) begin
-        if (rst == `RstDisable) begin
+        if (rst == `RstEnable) begin
             rdata1 <= `ZeroWord;
         end
         else if (raddr1 == `RegNumLog2'h0) begin
@@ -46,7 +46,7 @@ module regfile(
     end
 
     always @ (*) begin
-        if (rst == `RstDisable) begin
+        if (rst == `RstEnable) begin
             rdata2 <= `ZeroWord;
         end
         else if (raddr2 == `RegNumLog2'h0) begin
