@@ -12,22 +12,22 @@
 ![alt text](image.png)
 
 ## 设计文件
-- defines.v：定义地址总线宽度、数据总线宽度、指令宽度和指令码等常量。
-- pc_reg.v：PC模块, 用于给出取指地址。
-- if_id.v：取指-译码阶段寄存器, 用于存储取指阶段输出的指令。
-- regfile.v：寄存器堆模块, 用于存储处理器中的寄存器数据。
-- id.v：译码阶段模块, 用于对取指阶段输出的指令进行译码。
-- id_ex.v：译码-执行阶段寄存器, 用于存储译码阶段输出的数据。
-- ex.v：执行阶段模块, 用于对译码阶段输出的数据进行运算。
-- ex_mem.v：执行-访存阶段寄存器, 用于存储执行阶段输出的数据。
-- mem.v：访存阶段模块, 用于对执行阶段输出的数据进行访存。
-- mem_wb.v：访存-写回阶段寄存器, 用于存储访存阶段输出的数据。
-- inst_rom.v：指令存储器模块, 用于存储处理器中的指令数据。
-- openmips.v：处理器顶层模块, 用于连接其他模块。
-- openmips_min_sopc.v：处理器最小系统SOPC模块, 用于连接其他模块。
-- openmips_min_sopc_tb.v：处理器最小系统SOPC模块测试文件。
-- inst_rom.S：汇编语言文件, 用于编写处理器中的指令。
-- inst_rom.data：指令机器码文件，用于存储处理器中的指令机器码。
+- [defines.v](../src/defines.v)：定义地址总线宽度、数据总线宽度、指令宽度和指令码等常量。
+- [pc_reg.v](../src/pc_reg.v)：PC模块, 用于给出取指地址。
+- [if_id.v](../src/if_id.v)：取指-译码阶段寄存器, 用于存储取指阶段输出的指令。
+- [regfile.v](../src/regfile.v)：寄存器堆模块, 用于存储处理器中的寄存器数据。
+- [id.v](../src/id.v)：译码阶段模块, 用于对取指阶段输出的指令进行译码。
+- [id_ex.v](../src/id_ex.v)：译码-执行阶段寄存器, 用于存储译码阶段输出的数据。
+- [ex.v](../src/ex.v)：执行阶段模块, 用于对译码阶段输出的数据进行运算。
+- [ex_mem.v](../src/ex_mem.v)：执行-访存阶段寄存器, 用于存储执行阶段输出的数据。
+- [mem.v](../src/mem.v)：访存阶段模块, 用于对执行阶段输出的数据进行访存。
+- [mem_wb.v](../src/mem_wb.v)：访存-写回阶段寄存器, 用于存储访存阶段输出的数据。
+- [inst_rom.v](../src/inst_rom.v)：指令存储器模块, 用于存储处理器中的指令数据。
+- [openmips.v](../src/openmips.v)：处理器顶层模块, 用于连接其他模块。
+- [openmips_min_sopc.v](../src/openmips_min_sopc.v)：处理器最小系统SOPC模块, 用于连接其他模块。
+- [openmips_min_sopc_tb.v](../sim/openmips_min_sopc_tb.v)：处理器最小系统SOPC模块测试文件。
+- [inst_rom.S](../sim/inst_rom.S)：汇编语言文件, 用于编写处理器中的指令。
+- [inst_rom.mem](../sim/inst_rom.mem)：指令机器码文件，用于存储处理器中的指令机器码。
 
 ## 仿真波形
 ![alt text](image-1.png)
@@ -37,4 +37,4 @@
 
 ## 实验要点
 - 由于整个系统中的文件都使用了定义的宏常量，所以每个文件中都需要包含defines.v文件。
-- 在建立mips编译环境时，由于是32位处理器，所以选用的虚拟机最好也要是32位的。Ubuntu 16.04 LTS 是Ubuntu的最后一个32位Linux发行版，所以mips-sde-elf-i686-pc-linux-gnu.tar.tar解压缩出来的交叉编译工具可以直接在该系统上编译运行。
+- 在建立mips编译环境时，由于是32位处理器，所以选用的虚拟机最好也要是32位的。Ubuntu 16.04 LTS 是Ubuntu的最后一个长期支持的32位Linux发行版，所以mips-sde-elf-i686-pc-linux-gnu.tar.tar解压缩出来的交叉编译工具可以直接在该系统上编译运行。Ubuntu 16.04 LTS 下载地址：[Ubuntu 16.04 LTS](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/16.04/ubuntu-16.04.6-desktop-i386.iso)

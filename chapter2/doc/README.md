@@ -8,11 +8,11 @@
 - 指令存储器ROM的作用是存储指令，并依据输入的地址，给出对应地址的指令。
 
 ## 设计文件
-- inst_fetch.v：取指令模块顶层文件
-- pc_reg.v：PC模块
-- rom.v：指令存储器模块
-- inst_fetch_tb.v：取指令模块测试文件
-- rom.data：指令存储器数据文件
+- [inst_fetch.v](../src/inst_fetch.v)：取指令模块顶层文件
+- [pc_reg.v](../src/pc_reg.v)：PC模块
+- [rom.v](../src/rom.v)：指令存储器模块
+- [inst_fetch_tb.v](../sim/inst_fetch_tb.v)：取指令模块测试文件
+- [rom.data](../sim/rom.data)：指令存储器数据文件
 
 ## 仿真波形
 ![alt text](image.png)
