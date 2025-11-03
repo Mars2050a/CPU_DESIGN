@@ -25,7 +25,7 @@
 `define EXE_ANDI 6'b001100
 `define EXE_ORI 6'b001101
 `define EXE_XORI 6'b001110
-`define EXE_LUI 6'b001111
+`define EXE_LUI 6'b001111 //加载到高位指令
 
 `define EXE_SLL 6'b000000
 `define EXE_SLLV 6'b000100

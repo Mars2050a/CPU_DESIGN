@@ -29,7 +29,7 @@
 - [openmips_min_sopc.v](../src/openmips_min_sopc.v)：处理器最小系统SOPC模块, 用于连接其他模块。
 - [openmips_min_sopc_tb.v](../sim/openmips_min_sopc_tb.v)：处理器最小系统SOPC模块测试文件。
 - [inst_rom.S](../sim/inst_rom.S)：汇编语言文件, 用于编写处理器中的指令。
-- [inst_rom.mem](../sim/inst_rom.mem)：指令机器码文件，用于存储处理器中的指令机器码。
+- [inst_rom.data](../sim/inst_rom.data)：指令机器码文件，用于存储处理器中的指令机器码。
 
 ## RTL级原理图
 
