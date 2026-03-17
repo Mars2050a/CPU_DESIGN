@@ -12,7 +12,7 @@ module ex(
 
     output reg[`RegAddrBus] wd_o,
     output reg wreg_o,
-    output reg[`RegBus] wdata_o 
+    output reg[`RegBus] wdata_o,
 
     //chapter6 添加
     input wire[`RegBus] hi_i,
@@ -92,6 +92,8 @@ module ex(
             {HI,LO} <= {mem_hi_i,mem_lo_i};
         end
         else if(wb_whilo_i == `WriteEnable) begin
+            {HI,LO} <= {wb_hi_i,wb_lo_i};
+        end else begin
             {HI,LO} <= {hi_i,lo_i};
         end
     end
